@@ -30,8 +30,8 @@ class notify extends StatelessWidget {
               ),
             ),
           ),
-        ),
-        elevation: 0,
+        ), // Match the AppBar color with the background
+        elevation: 0, // Remove shadow
       ),
       body: Padding(
         padding: const EdgeInsets.symmetric(vertical: 10, horizontal: 15),
@@ -130,7 +130,7 @@ class notify extends StatelessWidget {
                   'مطلوب بشكل عاجل دم A+',
                   style: TextStyle(
                       fontFamily: 'ManchetteFineExtraBold',
-                      fontSize: 20,
+                      fontSize: 22,
                       color: tertiaryColor),
                 ),
                 const SizedBox(height: 16),
@@ -142,26 +142,26 @@ class notify extends StatelessWidget {
                         // Handle button press
                       },
                       style: ElevatedButton.styleFrom(
-                        backgroundColor: Colors.red,
+                        backgroundColor: tertiaryColor,
                       ),
                       child: const Text('قبول',
                           style: TextStyle(
                               fontFamily: 'ManchetteFineMedium',
                               fontSize: 18,
-                              color: tertiaryColor)),
+                              color: fourthColor)),
                     ),
                     ElevatedButton(
                       onPressed: () {
                         // Handle button press
                       },
                       style: ElevatedButton.styleFrom(
-                        backgroundColor: Colors.red,
+                        backgroundColor: tertiaryColor,
                       ),
                       child: const Text('رفض',
                           style: TextStyle(
                               fontFamily: 'ManchetteFineMedium',
                               fontSize: 18,
-                              color: tertiaryColor)),
+                              color: fourthColor)),
                     ),
                   ],
                 ),
