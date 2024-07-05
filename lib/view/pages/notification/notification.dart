@@ -30,8 +30,8 @@ class notify extends StatelessWidget {
               ),
             ),
           ),
-        ), // Match the AppBar color with the background
-        elevation: 0, // Remove shadow
+        ),
+        elevation: 0,
       ),
       body: Padding(
         padding: const EdgeInsets.symmetric(vertical: 10, horizontal: 15),
