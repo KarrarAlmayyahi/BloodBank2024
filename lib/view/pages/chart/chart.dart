@@ -1,4 +1,5 @@
 import 'package:emdad/constants/constants.dart';
+import 'package:emdad/view/pages/become_donor/become_donor.dart';
 import 'package:emdad/view/pages/homescreen.dart';
 import 'package:emdad/view/pages/info/info.dart';
 import 'package:emdad/view/pages/request_blood/RequestBlood.dart';
@@ -155,7 +156,7 @@ class _LineChartSample2State extends State<LineChartSample2> {
                             height: 100,
                             child: ElevatedButton(
                               onPressed: () {
-                                Get.to(() => const HomeScreen());
+                                Get.to(() => BecomeDonor());
                               },
                               style: ElevatedButton.styleFrom(
                                 backgroundColor: tertiaryColor,
@@ -167,14 +168,14 @@ class _LineChartSample2State extends State<LineChartSample2> {
                               child: const Column(
                                 mainAxisAlignment: MainAxisAlignment.center,
                                 children: <Widget>[
-                                  FaIcon(Icons.search,
+                                  FaIcon(Icons.donut_large_outlined,
                                       size: 30,
                                       color: Color.fromARGB(
                                           255, 232, 19, 60)), // Icon
                                   Padding(
                                     padding: EdgeInsets.only(top: 8),
                                     child: Text(
-                                      ' البحث عن متبرع ',
+                                      ' كن متبرع',
                                       textAlign: TextAlign.center,
                                       style: TextStyle(
                                           fontFamily: 'ManchetteFineExtraBold',
@@ -198,7 +199,7 @@ class _LineChartSample2State extends State<LineChartSample2> {
                             height: 100,
                             child: ElevatedButton(
                               onPressed: () {
-                                Get.to(() =>  const Info());
+                                Get.to(() => const Info());
                               },
                               style: ElevatedButton.styleFrom(
                                 backgroundColor: tertiaryColor,
